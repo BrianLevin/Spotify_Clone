@@ -34,19 +34,17 @@ const _token = hash.access_token;
      })
    });
  }
-console.log('I have a token', token)
+
   }, []);
-  console.log( ':)' , user);
-  console.log("Alein", token);
+
 
   return (
     <div className="app">
-     {
-       token ?  (
-        <Player />
-       ) :  (<Login />)
-     }
-      
+     
+       {token ?  
+        <Player spotify = {spotify}/>
+        :  <Login />}
+     
     </div>
   );
 }
