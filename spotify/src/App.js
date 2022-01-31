@@ -32,9 +32,10 @@ const _token = hash.access_token;
        user: user,
 
      })
+    })
      spotify.getUserPlaylists().then((playlists)=> {
-      dispatch(
-        {
+      dispatch({
+        
           type: 'SET_PLAYLISTS',
           playlists:playlists,
         });
