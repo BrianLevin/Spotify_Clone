@@ -27,7 +27,6 @@ function Body({ spotify }) {
         <div className="body-icons">
           <PlayCircleFilledIcon className="body-shuffle" />
           <FavoriteIcon fontSize="large" />
-          <FavoriteIcon fontSize="large" />
           <MoreHorizIcon />
         </div>
         {discover_weekly?.tracks.items.map((item) => (
