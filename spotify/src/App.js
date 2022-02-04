@@ -40,9 +40,14 @@ const _token = hash.access_token;
           playlists:playlists,
         });
    });
- }
-
-  }, []);
+   spotify.getPlaylist("37i9dQZF1DWVUDGkrVGXH9").then((response) =>
+   dispatch({
+     type: "SET_DISCOVER_WEEKLY",
+     discover_weekly: response,
+   })
+ );
+}
+}, []);
 
 
   return (
