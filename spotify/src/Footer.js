@@ -8,11 +8,21 @@ import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import VolumeDownIcon from "@material-ui/icons/VolumeDown";
 import { Grid, Slider } from "@material-ui/core";
+import { WindowTwoTone } from "@mui/icons-material";
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer__left">
-        <img src=" alt=" />
+       <div className="footer__left">
+        <img
+          className="footer__albumLogo"
+          src="https://upload.wikimedia.org/wikipedia/en/7/74/Usher_-_Confessions_album_cover.jpg"
+          alt="Usher"
+        />
+      <div class= "footer__songInfo">
+      <h4>Yeah</h4>
+          <p>Usher</p>
+      
+      </div>
       </div>
       <div className="footer__center">
       <ShuffleIcon className= "footer__green" />
